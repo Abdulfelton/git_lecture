@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4-Exercise Form</title>
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <style>
+    body {
+        font-family: "Raleway", sans-serif;
+
+    }
+    form{
+        border: 1px solid black;
+        padding: 60px;
+        border-radius: 3
+        px;
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: rgb(190, 177, 60);
+        font-style: italic;
+    }
+    input, select{
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    input[type="radio" i]{
+        display: inline;
+    }
+    label[name="Rate_Content"],
+    label[name="Extra_Comments"],
+    label[name="Rate_Lecturer"]{
+        
+        display: block;
+    }
+    .Lecturer-Label{        display: block; /*<!--to call class use . to call id use#-->*/
+
+
+    }
+</style>
+</head>
+<body>
+    <h1>Form </h1>
+
+    <!-- Start of forms-->
+    <form action="https://formspree.io/f/xpwzpzrd" method="post">
+
+        <!--First Name-->
+        <label>First Name</label>
+        <input type="text" name="(first_name)" placeholder="John">
+
+        <!--Last Name-->
+        <label> Last Name</label>
+        <input type="text" name="(last_name)" placeholder="Doe">
+
+        <!--Gender-->
+        <label class="Lecturer-Label">Gender</label>
+        <input type="radio" name="(gender)" value="Male"><label>Male</label>
+        <input type="radio" name="(gender)" value="Female"><label>Female</label>
+        <input type="radio" name="(gender)" value="Jahannam_Toe"><label>Jahannam </label>
+
+
+         <!--date of Birth-->
+         <label class="Lecturer-Label"> Date of Birth</label>
+         <input type="date" name="(date_of_birth)" placeholder="Johnd@gmail.com">
+ 
+         <!--Email Address-->
+         <label>Email</label>
+         <input type="email" name="(email)" placeholder="Johnd@gmail.com">
+ 
+         <button type="submit" class="Lecturer-Label">Submit</button>
+        </form>
+
+<!--Form for search name-->
+
+    <form action="https://httpbin.org/get" method="get">
+        <label>Search for Name:</label>
+        <input type="search" name="search_name" id="">
+        <!--Sumbit buttton-->
+        <button type="submit" class="Lecturer-Label">Submit</button>
+
+    </form>
+</body>
+</html>        
+
